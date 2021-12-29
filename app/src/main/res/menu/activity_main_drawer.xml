@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_basic"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_basic" />
+        <item
+            android:id="@+id/nav_civil"
+            android:icon="@drawable/ic_baseline_civil_24"
+            android:title="@string/menu_civil" />
+        <item
+            android:id="@+id/nav_police"
+            android:icon="@drawable/ic_baseline_police_24"
+            android:title="@string/menu_police" />
+        <item
+            android:id="@+id/nav_army"
+            android:icon="@drawable/ic_baseline_army_24"
+            android:title="@string/menu_army" />
+        <item
+            android:id="@+id/nav_dip"
+            android:icon="@drawable/ic_baseline_dip_24"
+            android:title="@string/menu_dip"/>
+
+
+    </group>
+
+
+            <item
+                android:id="@+id/nav_like"
+                android:icon="@drawable/ic_baseline_like_24"
+                android:title="@string/menu_like"
+                android:onClick="likeClick"/>
+
+</menu>

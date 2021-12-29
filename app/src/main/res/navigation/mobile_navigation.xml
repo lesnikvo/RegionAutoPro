@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_basic">
+
+    <fragment
+        android:id="@+id/nav_basic"
+        android:name="site.simpleproject.regionautopro.ui.basic.BasicFragment"
+        android:label="@string/menu_basic"
+        tools:layout="@layout/fragment_basic" />
+
+    <fragment
+        android:id="@+id/nav_civil"
+        android:name="site.simpleproject.regionautopro.ui.civil.CivilFragment"
+        android:label="@string/menu_civil"
+        tools:layout="@layout/fragment_civil" />
+
+    <fragment
+        android:id="@+id/nav_police"
+        android:name="site.simpleproject.regionautopro.ui.police.PoliceFragment"
+        android:label="@string/menu_police"
+        tools:layout="@layout/fragment_civil" />
+
+    <fragment
+        android:id="@+id/nav_army"
+        android:name="site.simpleproject.regionautopro.ui.army.ArmyFragment"
+        android:label="@string/menu_army"
+        tools:layout="@layout/fragment_civil" />
+
+    <fragment
+        android:id="@+id/nav_dip"
+        android:name="site.simpleproject.regionautopro.ui.dip.DipFragment"
+        android:label="@string/menu_dip"
+        tools:layout="@layout/fragment_civil" />
+
+</navigation>

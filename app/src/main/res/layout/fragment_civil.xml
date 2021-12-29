@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.civil.CivilFragment"
+    android:background="@color/originalGray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/table">
+        <TextView
+            android:id="@+id/numberText"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/text_rounded_civil"
+            android:textColor="@color/darkGray"
+            android:text=""
+            android:textSize="50sp"
+            android:maxLength="4">
+        </TextView>
+
+        <TextView
+            android:id="@+id/regionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:minLines="6"
+            android:maxLines="6"
+            android:layout_below="@id/numberText"
+            android:textSize="20sp"
+            android:textColor="@color/closeWhite"
+            android:layout_marginTop="10dp">
+        </TextView>
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/RoundedCornerButtonDay"
+                android:text="@string/_1" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/RoundedCornerButtonDay"
+                android:text="@string/_2" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/RoundedCornerButtonDay"
+                android:text="@string/_3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/RoundedCornerButtonDay"
+                android:text="@string/_4" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/RoundedCornerButtonDay"
+                android:text="@string/_5" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/RoundedCornerButtonDay"
+                android:text="@string/_6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/RoundedCornerButtonDay"
+                android:text="@string/_7" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/RoundedCornerButtonDay"
+                android:text="@string/_8" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/RoundedCornerButtonDay"
+                android:text="@string/_9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/buttonC"
+                style="@style/RoundedCornerButtonDay"
+                android:src="@drawable/ic_baseline_clear_24"
+                android:padding="14dp"
+                android:scaleType="fitCenter"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button0"
+                style="@style/RoundedCornerButtonDay"
+                android:text="@string/_0" />
+
+            <ImageButton
+                android:id="@+id/buttonSearch"
+                style="@style/RoundedCornerButtonDay"
+                android:src="@drawable/ic_baseline_search_24"
+                android:padding="14dp"
+                android:scaleType="fitCenter"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
